@@ -1,0 +1,180 @@
+body {
+    box-sizing: border-box;
+}
+
+.khatabook-app-heading,
+.book-icon,.you-gave {
+    color: #d92d20;
+}
+
+.khata-book-container {
+    width: 100%;
+    background-color: #fdf2f3;
+    max-height: 100vh;
+}
+
+.khatabook-input-box {
+    width: 100%;
+    border: 2px solid #bbbbbb;
+}
+
+.input-field {
+    width: 100%;
+}
+
+.name-input-box,
+.amount-input-box:focus {
+    outline: none;
+}
+
+.name-input-box,
+.amount-input-box {
+    width: 85%;
+    border: none;
+}
+
+.add-customer-button {
+    background-color: #d92d20;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.add-customer-button:hover  {
+    background-color: #9e140a;
+    transform: scale(1.1);
+    transition: all 250ms linear;
+}
+
+.name-input-box {
+    border-bottom: 2px solid #bbbbbb;
+    text-transform: capitalize;
+}
+
+.name-input-box::placeholder {
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.amount-input-box::placeholder {
+    font-size: 1.5rem;
+}
+
+.user-box {
+    width: 100%;
+    background-color: #d92d20;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.display-box {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+
+.update-amount-button:hover {
+    transform: scale(1.2);
+}
+
+.display-box {
+    display: none;
+}
+
+.customer-detail-container{
+    max-height: 70vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+/*     Balance Page css         */
+
+.balance-page-container {
+    width:40%;
+    background-color:#fdf2f3;
+}
+
+.total-balance-container, .customer-name, .back-button {
+    color:#d92d20;
+}
+
+.amount-debit-button {
+    background-color: #dd5754;
+}
+
+.amount-credit-button {
+    background-color: #008448;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.debit-input-box {
+    border: 2px solid #dd5754;
+}
+
+.credit-input-box {
+    border: 2px solid #008448;
+}
+
+.you-got {
+    color:#008448;
+}
+
+.customer-details {
+    width:100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .khata-book-container, .balance-page-container {
+        width: 80%;
+    }
+
+    .khatabook-input-box {
+        width: 80%;
+    }
+
+    .input-field {
+        width: 47%;
+    }
+
+    .user-box {
+        width: 90%;
+    }
+
+    .title {
+        width: 78%;
+    }
+
+    .name-input-box {
+        border-right: 2px solid #bbbbbb;
+        border-bottom: 0px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .khata-book-container, .balance-page-container {
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .khata-book-container, .balance-page-container {
+        width: 40%;
+    }
+
+    .khatabook-input-box {
+        width: 80%;
+    }
+
+    .input-field {
+        width: 47%;
+    }
+
+    .title {
+        width: 78%;
+    }
+}
